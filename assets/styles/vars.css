@@ -1,0 +1,32 @@
+/*
+VARIABLES
+*/
+
+:root {
+  /* COLORS */
+  --color-lightgrey: #d9d9d9;
+  --color-green: #d2ff02;
+  --color-darkgrey: #1b1b1b;
+
+  /* FONTS */
+  --font-sans: "DM Sans", sans-serif;
+
+  /* SIZES */
+  --size-8: 8px;
+  --size-12: 12px;
+  --size-14: 14px;
+
+  --size-16: 16px;
+
+  --size-20: 20px;
+  --size-24: 24px;
+  --size-32: 32px;
+  --size-36: 36px;
+  --size-42: 42px;
+  --size-48: 48px;
+  --size-60: 60px;
+  --size-64: 64px;
+  --size-80: 80px;
+
+  --size-120: 120px;
+}
