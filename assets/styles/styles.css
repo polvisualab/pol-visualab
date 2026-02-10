@@ -431,7 +431,7 @@ svg {
   width: 900px;
   overflow: hidden;
   user-select: none;
-  display: flex;  
+  display: flex;
 
   p {
     font-weight: 600;
@@ -639,5 +639,22 @@ svg {
 
   .info-nav a {
     color: black;
+  }
+
+  .project01-img01 {
+    filter: grayscale(0);
+    transition: all 0.4s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .button-nav-projects {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    gap: 1rem;
+
+    button {
+      background-color: var(--color-green);
+    }
   }
 }
