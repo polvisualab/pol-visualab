@@ -427,6 +427,41 @@ svg {
   transition-timing-function: ease-in-out;
 }
 
+.description-animated {
+  width: 900px;
+  overflow: hidden;
+  user-select: none;
+  display: flex;
+
+  p {
+    font-weight: 600;
+    color: transparent;
+    text-wrap: nowrap;
+    padding-right: 1rem;
+  }
+}
+
+.featured-container:hover {
+  .description-animated p {
+    color: var(--color-darkgrey);
+  }
+}
+
+.description-animated p {
+  animation: scroll 20s linear infinite;
+}
+
+.description-animated p::before {
+  content: "🡢";
+  padding-right: 1rem;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .project01-img01:hover {
   filter: grayscale(0);
 }
@@ -533,10 +568,18 @@ svg {
 @media (orientation: portrait) {
   body {
     flex-direction: column;
+    overflow: scroll;
+    scroll-behavior: smooth;
   }
 
   nav {
     padding: 0;
+    background-color: var(--color-lightgrey);
+    z-index: 600;
+
+    a {
+      color: black;
+    }
   }
 
   .featured-container {
@@ -544,6 +587,10 @@ svg {
   }
 
   .description-animated {
+    display: none;
+  }
+
+  .featured-js {
     display: none;
   }
 
@@ -560,10 +607,12 @@ svg {
   }
 
   .open-img {
-    width: 35%;
-    top: 45%;
-    left: 20%;
-    z-index: 300;
+    width: 40%;
+    top: 85%;
+    right: -15%;
+    transform: translate(-20%, -20%);
+    z-index: 600;
+    position: fixed;
   }
 
   .featured-img {
@@ -578,7 +627,17 @@ svg {
       width: 100%;
       height: auto;
       object-fit: cover;
-      object-position: bottom;
+      object-position: center;
     }
+  }
+
+  .project-wrapper {
+    padding-top: 10vh;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .info-nav a {
+    color: black;
   }
 }
