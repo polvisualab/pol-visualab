@@ -513,6 +513,10 @@ svg {
     transform: rotate(360deg);
   }
 }
+
+.featured-img {
+  display: none;
+}
 /* .lab-cover {
   width: 60%;
   top: 50%;
@@ -525,3 +529,56 @@ svg {
   stroke-width: 0.5px;
   stroke: var(--color-darkgrey);
 } */
+
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  .featured-container {
+    padding: 0 0.5rem;
+  }
+
+  .description-animated {
+    display: none;
+  }
+
+  .svg-container {
+    svg {
+      padding-top: 50px;
+      max-width: 90vw;
+      height: 100%;
+    }
+  }
+
+  .cursor {
+    display: none;
+  }
+
+  .open-img {
+    width: 35%;
+    top: 45%;
+    left: 20%;
+    z-index: 300;
+  }
+
+  .featured-img {
+    display: block;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 0.5px solid var(--color-darkgrey);
+    padding-bottom: 2rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+}
