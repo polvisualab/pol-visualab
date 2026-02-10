@@ -431,7 +431,7 @@ svg {
   width: 900px;
   overflow: hidden;
   user-select: none;
-  display: flex;
+  display: flex;  
 
   p {
     font-weight: 600;
