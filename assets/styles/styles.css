@@ -102,6 +102,14 @@ button {
   height: 100vh;
 }
 
+.height-80 {
+  height: 80vh;
+}
+
+.height-40 {
+  height: 40vh;
+}
+
 .cont-column {
   display: flex;
   flex-direction: column;
@@ -178,6 +186,10 @@ button {
   font-weight: bold;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* Text Sizes */
 .text-xs {
   font-size: var(--size-14);
@@ -190,6 +202,12 @@ button {
 }
 .text-l {
   font-size: var(--size-24);
+}
+
+.big-text {
+  font-size: 10vw;
+  line-height: 100%;
+  font-weight: 250;
 }
 
 /* Paddings */
@@ -482,6 +500,11 @@ svg {
   height: auto;
 }
 
+.height-100vh {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .align-center {
   align-items: center;
 }
@@ -502,7 +525,7 @@ svg {
 
 .about-container {
   text-wrap: wrap;
-  width: 40%;
+  width: 60%;
   /* transform: translate(-50%, 25%); */
   padding: auto;
 }
@@ -521,23 +544,77 @@ svg {
 
 .underconstruction-wrapper {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 8vh;
+  padding: auto;
 }
 
 .uc-container {
   text-wrap: wrap;
-  width: 50%;
+  width: 100%;
   /* transform: translate(-50%, 25%); */
   padding: auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.ellipse-svg {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  svg {
+    width: 120%;
+  }
 }
 
 .open-img-2 {
   display: block;
   animation: rotate360 15s linear infinite;
   transform-origin: center center;
+}
+
+.giant-text {
+  font-size: 15vw;
+  font-weight: 300;
+  color: var(--color-green);
+}
+
+.info-about-container {
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-darkgrey);
+}
+
+.archive-wrapper {
+  width: 100vw;
+}
+
+.archive-container {
+  width: 100vw;
+  /* position: sticky;
+  top: 0; */
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu img,
+video {
+  display: inline-block;
+  color: var(--color-offwhite);
+  text-align: center;
+  padding: var(--size-16);
+  text-decoration: none;
+
+  img {
+    height: auto;
+    object-fit: contain;
+  }
 }
 
 @keyframes rotate360 {
