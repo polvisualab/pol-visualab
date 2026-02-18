@@ -429,10 +429,10 @@ svg {
 }
 
 .project05-img {
-  width: 25%;
-  top: 50%;
-  left: 50%;
-  transform: translate(80%, 20%);
+  width: 55%;
+  top: 70%;
+  left: 10%;
+  transform: translate(50%, 0%);
 }
 
 .gap-s {
@@ -443,6 +443,10 @@ svg {
   filter: grayscale(1);
   transition: all 0.4s;
   transition-timing-function: ease-in-out;
+}
+
+.project05-img01 {
+  padding-top: 15vh;
 }
 
 .description-animated {
